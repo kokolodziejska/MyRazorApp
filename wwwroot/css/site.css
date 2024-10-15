@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #85e0ff;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff9966;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+    nav a:hover {
+        color: #0056b3;
+    }
+
+main.container {
+    margin: 20px auto;
+    max-width: 800px;
+    align-content: center;
+}
+
+footer {
+    background-color: #ff9966;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 2px 36px 3px #ff9966;
+    background-color: #ffc48a;
+}
+
+.pola {
+    text-align: left;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #ff9966;
+    margin-bottom: 15px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.pola div {
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.text-danger {
+    color: #ff0000;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1999eb;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4d99c2;
+}
+.sukces {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 40px;
+}
+
+.sukcesItems {
+    max-width: 500px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 2px 36px 3px #66b2ff;
+    background-color: #b6ecff;
+    margin-left: calc(50% - 250px);
+}
+
+

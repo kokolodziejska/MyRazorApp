@@ -1,0 +1,55 @@
+﻿@page
+@model MyRazorApp.Pages.IndexModel
+@{
+    ViewData["Title"] = "Zakładanie konta";
+}
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css?v=1.0" />
+</head>
+<body>
+    <main role="main" class="container">
+        <h2>@ViewData["Title"]</h2>
+        <h3>Rejestracja</h3>
+
+        <form method="post" novalidate>
+            @Html.AntiForgeryToken()
+            <div class="pola">
+                <div>
+                    <label>Podaj swoje imię i nazwisko:</label>
+                </div>
+                <div>
+                    <label for="Name">Imię:</label>
+                    <input type="text" id="Name" name="UserData.Name" />
+                    <span asp-validation-for="UserData.Name" class="text-danger"></span>
+                </div>
+                <div>
+                    <label for="Nazwisko">Nazwisko:</label>
+                    <input type="text" id="Nazwisko" name="UserData.Nazwisko" />
+                    <span asp-validation-for="UserData.Nazwisko" class="text-danger"></span>
+                </div>
+                <div>
+                    <label for="Email">Adres e-mail:</label>
+                    <input type="email" id="Email" name="UserData.Email" />
+                    <span asp-validation-for="UserData.Email" class="text-danger"></span>
+                </div>
+                <div>
+                    <label for="Password">Hasło:</label>
+                    <input type="password" id="Password" name="UserData.Password" />
+                    <span asp-validation-for="UserData.Password" class="text-danger"></span>
+                </div>
+                <button type="submit">Zarejestruj się</button>
+            </div>
+        </form>
+
+        @section Scripts {
+            <partial name="_ValidationScriptsPartial" />
+        }
+    </main>
+</body>
+</html>
